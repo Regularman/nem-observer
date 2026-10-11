@@ -1,0 +1,20 @@
+[project]
+name = "nem-observer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Man Ching Melvin Chan", email = "z5361805@student.unsw.edu.au" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "nemosis>=3.8.1",
+    "openelectricity[analysis]>=0.11.3",
+]
+
+[project.scripts]
+nem-observer = "nem_observer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
